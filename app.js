@@ -24,7 +24,7 @@ async function fetchWeatherInfo(value) {
 
     let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=386052c5047e4eac94883018230406&q=${value}`, {mode: "cors"})
     let weatherData = await response.json()
-    console.log(weatherData)
+    //console.log(weatherData)
 
     if(weatherData['error']){
         alert(weatherData['error']['message'])
